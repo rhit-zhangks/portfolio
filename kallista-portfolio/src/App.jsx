@@ -52,11 +52,11 @@ const App = () => {
         token: {
           // Seed Token
           colorPrimary: "#68CFDF", // primary color
-          colorText: "#D6FFFD", // other text
+          colorText: "#EBEAEB", // other text
 
           // Alias Token
           colorBgContainer: "#3E3B3F", // menu buttons
-          colorBorderSecondary: '#3E3B3F',
+          colorBorderSecondary: '#3E3B3F', // remove white line
         },
       }}
     >
@@ -72,6 +72,7 @@ const App = () => {
             backgroundColor: "#3E3B3F", // left and right margins
             position: "fixed",
             width: "100%",
+            zIndex: '10000'
           }}
         >
           <div className="demo-logo" />
@@ -93,7 +94,7 @@ const App = () => {
         <Content
           style={{
             padding: "30px 20px",
-            background: "#534F54",
+            background: "#686369",
           }}
         >
           <div
@@ -102,7 +103,6 @@ const App = () => {
               minHeight: 280,
               padding: 24,
               borderRadius: borderRadiusLG,
-              background: "#EBEAEB",
             }}
           >
             {swapCurrentPage(currentPage)}
@@ -113,9 +113,12 @@ const App = () => {
           style={{
             textAlign: "center",
             color: "#3E3B3F",
+            display: 'flex',
+            justifyContent: 'space-around'
           }}
         >
-          kallista zhang © {new Date().getFullYear()}
+          <p>kallista zhang © {new Date().getFullYear()}</p>
+          template by ant design
         </Footer>
       </Layout>
     </ConfigProvider>

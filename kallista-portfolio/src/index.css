@@ -25,3 +25,15 @@
 body {
     color: #3E3B3F;
 }
+
+a {
+  color: #27A6B9;
+}
+
+.expandOnHover:hover {
+  transform: scale(1.01);
+}
+
+.projectCardRow {
+  margin-bottom: 10vh;
+}
