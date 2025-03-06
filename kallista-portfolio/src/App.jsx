@@ -51,23 +51,26 @@ const App = () => {
       theme={{
         token: {
           // Seed Token
-          colorPrimary: "#68CFDF",
-          colorText: "#D6FFFD",
-          borderRadius: 2,
+          colorPrimary: "#68CFDF", // primary color
+          colorText: "#D6FFFD", // other text
 
           // Alias Token
-          colorBgContainer: "#3E3B3F",
+          colorBgContainer: "#3E3B3F", // menu buttons
+          colorBorderSecondary: '#3E3B3F',
         },
       }}
     >
-      <Layout>
+      <Layout
+        style={{
+          minHeight: "100vh",
+        }}
+      >
         <Header
           style={{
             display: "flex",
             alignItems: "center",
-            backgroundColor: "#3E3B3F",
+            backgroundColor: "#3E3B3F", // left and right margins
             position: "fixed",
-            top: "0",
             width: "100%",
           }}
         >
@@ -99,6 +102,7 @@ const App = () => {
               minHeight: 280,
               padding: 24,
               borderRadius: borderRadiusLG,
+              background: "#EBEAEB",
             }}
           >
             {swapCurrentPage(currentPage)}
@@ -108,6 +112,7 @@ const App = () => {
         <Footer
           style={{
             textAlign: "center",
+            color: "#3E3B3F",
           }}
         >
           kallista zhang © {new Date().getFullYear()}
