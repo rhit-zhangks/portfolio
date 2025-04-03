@@ -1,3 +1,3 @@
-hello! this is the repository for my personal website
+Hello! this is the repository for my personal website.
 
-this website uses react, tailwindcss, vite, and hopefully appwrite eventually!
+This website uses a Vite setup, React components, and will include TailwindCSS in the future.
